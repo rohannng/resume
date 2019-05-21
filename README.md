@@ -1,16 +1,20 @@
 ## Rohan Grover's Resume 
 
-My Resume nade using LaTeX, style used from https://github.com/posquit0/Awesome-CV
+My Resume made using LaTeX, style used from https://github.com/posquit0/Awesome-CV
 
 
 ## Dependencies :
     Full installation of Latex Live
-    XeLatex command
+    XeLaTeX command
 
 
 On linux install latex using the following command
 
     sudo apt install texlive-full
+
+On Mac 
+    download MacTeX http://www.tug.org/mactex/mactex-download.html
+    enusre you have FontAwesome installed https://ctan.org/tex-archive/fonts/fontawesome
 
 and then run the following command to generate the pdf file
 
