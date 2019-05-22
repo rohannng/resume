@@ -28,3 +28,5 @@ References
 * https://stackoverflow.com/questions/1017055/get-started-with-latex-on-linux
 * https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/TypicalInput.html
 * https://en.wikibooks.org/wiki/LaTeX
+* https://www.latex-tutorial.com/tutorials/
+
