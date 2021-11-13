@@ -4,3 +4,6 @@
 *.fdb_latexmk
 *.out
 *.synctex.gz
+
+
+.DS_Store

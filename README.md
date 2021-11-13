@@ -3,10 +3,22 @@
 My Resume made using LaTeX, style used from https://github.com/posquit0/Awesome-CV
 
 
+
+
 ## Dependencies :
     Full installation of Latex Live
     XeLaTeX command
 
+Use the Docker container
+
+    docker build --tag rohannng/texlive .
+
+and then mount the dir and run
+
+    docker run \
+    --volume $(pwd):/data \
+    rohannng/texlive \
+    make
 
 On linux install latex using the following command
 
