@@ -3,13 +3,12 @@
 My Resume made using LaTeX, style used from https://github.com/posquit0/Awesome-CV
 
 
-
-
 ## Dependencies :
-    Full installation of Latex Live
+Full installation of Latex Live
+
     XeLaTeX command
 
-Use the Docker container
+## Running Env - Docker container
 
     docker build --tag rohannng/texlive .
 
@@ -20,6 +19,8 @@ and then mount the dir and run
     rohannng/texlive \
     make
 
+## Running - baremetal
+
 On linux install latex using the following command
 
     sudo apt install texlive-full
@@ -28,7 +29,9 @@ On Mac
     download MacTeX http://www.tug.org/mactex/mactex-download.html
     enusre you have FontAwesome installed https://ctan.org/tex-archive/fonts/fontawesome
 
-and then run the following command to generate the pdf files for both versions of resume
+## Run options
+
+Run the following command to generate the pdf files for both versions of resume
 
     make
 
@@ -52,4 +55,6 @@ References
 * https://en.wikibooks.org/wiki/LaTeX
 * https://www.latex-tutorial.com/tutorials/
 
+
+## SDLC
 
