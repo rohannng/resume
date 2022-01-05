@@ -5,8 +5,11 @@
 *.out
 *.synctex.gz
 
+# Dont check in resume pdfs. They will be generated on the fly
+*.pdf
 
 .DS_Store
 
-
+# No intellij files
 .idea
+
