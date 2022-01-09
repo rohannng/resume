@@ -20,5 +20,6 @@ jobs:
           make
       - name: Generated resume pdf files.
         run: |
-          ls -ltr ${{ github.workspace }}/*pdf
+          ls -ltr ${{ github.workspace }}/ |
+          ls -ltr /data
       - run: echo "🍏 This job's status is ${{ job.status }}."
