@@ -10,13 +10,11 @@ Full installation of Latex Live
 
 ## Running Env - Docker container
 
-    docker build --tag rohannng/texlive .
-
-and then mount the dir and run
+Run using the rohannng/texlive-full docker image. Mount the dir and run
 
     docker run \
     --volume $(pwd):/data \
-    rohannng/texlive \
+    rohannng/texlive-full \
     make
 
 ## Running - baremetal
