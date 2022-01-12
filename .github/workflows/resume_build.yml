@@ -1,7 +1,10 @@
-name: Publish resumes
-on: [push]
+name: Generate Resumes
+on:
+  push :
+    branches:
+        - main
 jobs:
-  publish-resumes:
+  generate-resumes:
     runs-on: ubuntu-latest
     container:
       image: rohannng/texlive-full:main
@@ -16,4 +19,8 @@ jobs:
       - name: Generated resume pdf files.
         run: |
           ls -ltr /data
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Upload resumes
+          uses: actions/upload-artifact@v2
+          with:
+            name: resumes
+            path: /data/*.pdf
