@@ -13,14 +13,17 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v2
+
       - name: Generate resumes...
         run: |
           make
-      - name: Generated resume pdf files.
+
+      - name: List resume pdf files.
         run: |
           ls -ltr /data
+          
       - name: Upload resumes
-          uses: actions/upload-artifact@v2
-          with:
-            name: resumes
-            path: /data/*.pdf
+        uses: actions/upload-artifact@v2
+        with:
+          name: resumes
+          path: /data/*.pdf

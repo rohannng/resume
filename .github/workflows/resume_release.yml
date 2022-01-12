@@ -5,4 +5,9 @@ on:
       - '*'
 
 jobs:
-  build: …
+  release:
+    steps:
+      - name: Create Release
+        run : echo "Creating release"
+      - name: Attaching artifacts
+        run : echo "Attaching artifacts"
