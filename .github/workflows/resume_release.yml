@@ -5,9 +5,16 @@ on:
       - '*'
 
 jobs:
-  release:
+  build-resumes:
+    uses: rohannng/resume/.github/workflows/resume_build.yml@{{ github.ref }}
+
+  release-resumes:
+    runs-on: ubuntu-latest
     steps:
-      - name: Create Release
-        run : echo "Creating release"
-      - name: Attaching artifacts
-        run : echo "Attaching artifacts"
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          body:
+            Updated resumes released!
+          files: |
+            /data/*.pdf

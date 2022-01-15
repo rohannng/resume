@@ -1,8 +1,10 @@
 name: Generate Resumes
 on:
-  push :
+  push:
     branches:
-        - main
+      - main
+  workflow_call:
+
 jobs:
   generate-resumes:
     runs-on: ubuntu-latest
