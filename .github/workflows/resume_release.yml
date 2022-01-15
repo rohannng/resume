@@ -9,6 +9,7 @@ jobs:
     uses: rohannng/resume/.github/workflows/resume_build.yml@main
 
   release-resumes:
+    needs: build-resumes
     runs-on: ubuntu-latest
     steps:
       - name: Release
