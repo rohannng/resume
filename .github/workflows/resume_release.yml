@@ -12,10 +12,14 @@ jobs:
     needs: build-resumes
     runs-on: ubuntu-latest
     steps:
+      - name: Download resumes
+        uses: actions/download-artifact@v2
+        with:
+          name: resumes
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           body:
             Updated resumes released!
           files: |
-            /data/*.pdf
+            *.pdf
