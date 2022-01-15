@@ -21,7 +21,7 @@ jobs:
       - name: List resume pdf files.
         run: |
           ls -ltr /data
-          
+
       - name: Upload resumes
         uses: actions/upload-artifact@v2
         with:
