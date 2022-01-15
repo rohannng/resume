@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-resumes:
-    uses: rohannng/resume/.github/workflows/resume_build.yml@{{ github.ref }}
+    uses: rohannng/resume/.github/workflows/resume_build.yml@{{github.ref}}
 
   release-resumes:
     runs-on: ubuntu-latest
