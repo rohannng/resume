@@ -14,7 +14,7 @@ Run using the rohannng/texlive-full docker image. Mount the dir and run
 
     docker run \
     --volume $(pwd):/data \
-    rohannng/texlive-full \
+    rohannng/texlive-full:main \
     make
 
 ## Running - baremetal
