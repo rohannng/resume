@@ -56,3 +56,10 @@ References
 
 ## SDLC
 
+This repo uses 
+* GitHub actions for automated builds
+* Feature branch git workflow when required.
+
+Checkin to the main branch to trigger the build pipeline. Check the github actions tab to view produced resume artifacts.
+Create a tag to trigger the release pipeline.
+
