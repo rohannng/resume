@@ -1,21 +1,21 @@
 CC = xelatex
+PDF_X = rohan_grover_resume_x.pdf
+TEX_X = rohan_grover_resume_x.tex
 PDF = rohan_grover_resume.pdf
 TEX = rohan_grover_resume.tex
-PDF_SHORT = rohan_grover_resume_short.pdf
-TEX_SHORT = rohan_grover_resume_short.tex
 
-default : short full
+default : short x
 
 short: clean_short
-	${CC} ${TEX_SHORT}
-
-full: clean_full
 	${CC} ${TEX}
 
-clean: clean_full clean_short
+x: clean_x
+	${CC} ${TEX_X}
+
+clean: clean_short clean_x
 	
-clean_full:
+clean_short:
 	rm -f ${PDF}
 
-clean_short:
-	rm -f ${PDF_SHORT}
+clean_x:
+	rm -f ${PDF_X}
