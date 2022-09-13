@@ -1,3 +1,7 @@
+## v1.1
+- Added new skils to BLK director section
+- Renamed short resume to be default and full resume as x ( extended )
+
 ## v1.0
 - Added director section
 - Added fisci slim section
