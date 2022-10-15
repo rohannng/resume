@@ -1,5 +1,8 @@
-## v1.2
+## v1.3
 - Forking resumes to create Software Development Manager and Principal Engineer resumes
+
+## v1.2
+- Updating homepage to rohangrover.xyz
 
 ## v1.1
 - Added new skils to BLK director section
