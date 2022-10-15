@@ -1,3 +1,6 @@
+## v1.2
+- Forking resumes to create Software Development Manager and Principal Engineer resumes
+
 ## v1.1
 - Added new skils to BLK director section
 - Renamed short resume to be default and full resume as x ( extended )

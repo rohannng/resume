@@ -1,21 +1,30 @@
 CC = xelatex
-PDF_X = rohan_grover_resume_x.pdf
-TEX_X = rohan_grover_resume_x.tex
-PDF = rohan_grover_resume.pdf
-TEX = rohan_grover_resume.tex
+PREFIX = rohan_grover_resume
 
 default : short x
 
 short: clean_short
-	${CC} ${TEX}
+	for ROLE in sdm pe;\
+	do\
+		${CC} ${PREFIX}_"$$ROLE".tex;\
+	done;
 
 x: clean_x
-	${CC} ${TEX_X}
+	for ROLE in sdm pe;\
+	do\
+		${CC} ${PREFIX}_"$$ROLE"_x.tex;\
+	done;
 
 clean: clean_short clean_x
 	
 clean_short:
-	rm -f ${PDF}
+	for ROLE in sdm pe;\
+	do\
+		rm -f ${PREFIX}_"$$ROLE".pdf;\
+	done;
 
 clean_x:
-	rm -f ${PDF_X}
+	for ROLE in sdm pe;\
+	do\
+		rm -f ${PREFIX}_"$$ROLE"_x.pdf;\
+	done;
