@@ -1,3 +1,6 @@
+## v1.4
+- Fix typos and brevity
+
 ## v1.3
 - Forking resumes to create Software Development Manager and Principal Engineer resumes
 
