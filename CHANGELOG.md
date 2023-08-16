@@ -1,3 +1,6 @@
+## v1.5
+- Updating director experience
+
 ## v1.4
 - Fix typos and brevity
 
