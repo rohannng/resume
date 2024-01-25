@@ -1,3 +1,6 @@
+## v2.0
+- Updating resume for 2024
+
 ## v1.5
 - Updating director experience
 
