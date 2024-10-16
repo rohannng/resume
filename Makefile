@@ -1,30 +1,22 @@
 CC = xelatex
 PREFIX = rohan_grover_resume
+ROLES = sdm pe
+VERSIONS =  "" _x
+DT = $(shell date +%Y%m%d)
 
-default : short x
+default : render
 
-short: clean_short
-	for ROLE in sdm pe;\
+render: clean
+	for ROLE in ${ROLES};\
 	do\
-		${CC} ${PREFIX}_"$$ROLE".tex;\
+		for VERSION in ${VERSIONS};\
+		do\
+			${CC} --jobname=${PREFIX}_"$$ROLE""$$VERSION"_${DT} ${PREFIX}_"$$ROLE""$$VERSION".tex;\
+		done;\
 	done;
 
-x: clean_x
-	for ROLE in sdm pe;\
+clean: 
+	for ROLE in ${ROLES};\
 	do\
-		${CC} ${PREFIX}_"$$ROLE"_x.tex;\
-	done;
-
-clean: clean_short clean_x
-	
-clean_short:
-	for ROLE in sdm pe;\
-	do\
-		rm -f ${PREFIX}_"$$ROLE".pdf;\
-	done;
-
-clean_x:
-	for ROLE in sdm pe;\
-	do\
-		rm -f ${PREFIX}_"$$ROLE"_x.pdf;\
+		rm -f ${PREFIX}_"$$ROLE"*.pdf;\
 	done;
