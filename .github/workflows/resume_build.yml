@@ -25,7 +25,7 @@ jobs:
           ls -ltr /data
 
       - name: Upload resumes
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: resumes
           path: /data/*.pdf
